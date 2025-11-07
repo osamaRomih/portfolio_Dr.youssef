@@ -410,7 +410,7 @@ html.dark #services .card-hover p {
 .reviews-carousel {
   position: relative;
   overflow: hidden;
-  min-height: 300px;
+  min-height: 230px;
 }
 
 .review-slide {
@@ -534,6 +534,51 @@ html.dark #services .card-hover p {
 .animate-floating {
   animation: float 4s ease-in-out infinite;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* حركة تموج المياه للخلفية */
+@keyframes waterFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* أنيميشن ظهور الشارة */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* شارة الخبرة بخلفية مائية متحركة */
+.experience-badge {
+  position: absolute;
+  bottom: -15px; /* أسفل قليلاً من الصورة */
+  right: -45px; /* على يسار الصورة */
+  background: linear-gradient(135deg, #1e3a8a, #3b82f6, #60a5fa);
+  background-size: 200% 200%;
+  color: white;
+  font-weight: bold;
+  padding: 10px 26px;
+  border-radius: 50px;
+  box-shadow: 0 6px 20px rgba(0, 188, 212, 0.5);
+  font-size: 1.1rem;
+  animation: fadeUp 1s ease-in-out forwards, waterFlow 6s linear infinite,
+    float 4s ease-in-out infinite;
+  z-index: 10;
+  letter-spacing: 0.5px;
+  transform: rotate(-5deg); /* ميل خفيف للشارة لإحساس بالحركة */
 }
 
 /* تأثير لطيف عند الوقوف بالماوس */
@@ -815,7 +860,7 @@ footer a:hover {
 }
 .gradient-text {
   font-weight: bold;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #60a5fa, #2563eb, #1e3a8a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
