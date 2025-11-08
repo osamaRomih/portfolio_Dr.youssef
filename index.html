@@ -57,7 +57,7 @@
                   <span class="lang-en">Experience</span>
                   <span class="lang-ar hidden-lang">الخبرات</span>
                 </a>
-          <a
+                <a
                   href="#clinic"
                   class="nav-link text-theme-secondary hover:text-blue-600 transition-colors"
                 >
@@ -72,13 +72,13 @@
                             <span class="lang-ar hidden-lang">الخدمات</span>
                           </a>
         
-                          <a
-                            href="#gallery"
-                            class="nav-link text-theme-secondary hover:text-blue-600 transition-colors"
-                          >
-                            <span class="lang-en">Gallery</span>
-                            <span class="lang-ar hidden-lang">المعرض</span>
-                          </a>
+                             <a
+                      href="#gallery"
+                      class="nav-link text-theme-secondary hover:text-blue-600 transition-colors"
+                    >
+                      <span class="lang-en">Highlights</span>
+                      <span class="lang-ar hidden-lang">لقطات مميزة</span>
+                    </a>
                 <a
                   href="#patients"
                   class="nav-link text-theme-secondary hover:text-blue-600 transition-colors"
@@ -104,19 +104,83 @@
                 <span class="absolute right-2  font-semibold text-blue-700 dark:text-blue-300">AR</span>
               </label>
             </div>
-            <button
-              id="themeToggle"
-              class="p-2 m-0 rounded-md text-theme-secondary hover:bg-theme-tertiary transition-colors" hidden
-            >
-              <i class="fas fa-moon theme-icon-moon"></i>
-              <i class="fas fa-sun theme-icon-sun hidden text-yellow-400"></i>
-            </button>
-            <button
+     <!-- Theme Toggle -->
+<!-- From Uiverse.io by RiccardoRapelli --> 
+<label class="switch">
+  <input id="input" type="checkbox" checked="darkTheme" />
+  <div class="slider round">
+    <div class="sun-moon">
+      <svg id="moon-dot-1" class="moon-dot" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="50"></circle>
+      </svg>
+      <svg id="moon-dot-2" class="moon-dot" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="50"></circle>
+      </svg>
+      <svg id="moon-dot-3" class="moon-dot" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="50"></circle>
+      </svg>
+      <svg id="light-ray-1" class="light-ray" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="50"></circle>
+      </svg>
+      <svg id="light-ray-2" class="light-ray" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="50"></circle>
+      </svg>
+      <svg id="light-ray-3" class="light-ray" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="50"></circle>
+      </svg>
+
+      <svg id="cloud-1" class="cloud-dark" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="50"></circle>
+      </svg>
+      <svg id="cloud-2" class="cloud-dark" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="50"></circle>
+      </svg>
+      <svg id="cloud-3" class="cloud-dark" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="50"></circle>
+      </svg>
+      <svg id="cloud-4" class="cloud-light" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="50"></circle>
+      </svg>
+      <svg id="cloud-5" class="cloud-light" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="50"></circle>
+      </svg>
+      <svg id="cloud-6" class="cloud-light" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="50"></circle>
+      </svg>
+    </div>
+    <div class="stars">
+      <svg id="star-1" class="star" viewBox="0 0 20 20">
+        <path
+          d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
+        ></path>
+      </svg>
+      <svg id="star-2" class="star" viewBox="0 0 20 20">
+        <path
+          d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
+        ></path>
+      </svg>
+      <svg id="star-3" class="star" viewBox="0 0 20 20">
+        <path
+          d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
+        ></path>
+      </svg>
+      <svg id="star-4" class="star" viewBox="0 0 20 20">
+        <path
+          d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
+        ></path>
+      </svg>
+    </div>
+  </div>
+</label>
+
+
+            <!-- Login Button -->
+            <!-- <button
               class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition-colors"
             >
               <span class="lang-en">Login</span>
               <span class="lang-ar hidden-lang">تسجيل الدخول</span>
-            </button>
+            </button> -->
           </div>
         </div>
       </div>
@@ -185,10 +249,13 @@
               class="bg-white text-blue-600 px-8 py-3 rounded-md font-semibold hover:bg-gray-100 transition-colors"
             >
               <a class="lang-en" href="#contact">Book Appointment</a>
-              <a class="lang-ar hidden-lang"  href="#contact">احجز موعد</a>
+              <a class="lang-ar hidden-lang" 
+              href="https://wa.me/201092225732?text=مرحبًا%20أود%20حجز%20موعد%20مع%20الدكتور"
+              target="_blank"
+              rel="noopener noreferrer">احجز موعد</a>
             </button>
             <a
-              class="border-2 border-white text-white px-8 py-3 rounded-md font-semibold hover:bg-white hover:text-blue-600 transition-colors"
+              class="abou border-2 border-white text-white px-8 py-3 rounded-md font-semibold hover:bg-white hover:text-blue-600 transition-colors"
               href="#about"
             >
                 <span class="lang-en">About Me</span>
@@ -325,23 +392,24 @@
 <!-- Qualifications Section -->
 <section
   id="experience"
-  class="py-20 bg-white dark:bg-gray-900 transition-colors duration-300"
+  class="py-20 transition-colors duration-300"
+  style="background-color: var(--bg-color);"
 >
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <!-- Header -->
-    <div class="fade-in text-center mb-16"  >
-      <h2 class="text-4xl font-bold mb-4 text-gray-900 dark:text-white">
+    <div class="fade-in text-center mb-16">
+      <h2 class="text-4xl font-bold mb-4" style="color: var(--text-color);">
         <span class="lang-en">Qualifications & Certificates</span>
         <span class="lang-ar hidden-lang">المؤهلات والشهادات</span>
       </h2>
       <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
-      <p class="mt-6 text-gray-700 dark:text-gray-300 max-w-3xl mx-auto text-lg leading-relaxed">
-        <span class="lang-en">
+      <p class="mt-6 max-w-3xl mx-auto text-lg leading-relaxed" style="color: var(--secondary-text-color);">
+        <span class="lang-en" style="color: var(--text-color);">
           With over 13 years of experience, Dr. Youssef Saber Romih is a distinguished
           cardiologist combining academic excellence with compassionate care. Below are
           some of his professional qualifications and achievements.
         </span>
-        <span class="lang-ar hidden-lang">
+        <span class="lang-ar hidden-lang" style="color: var(--text-color);">
           بخبرة تمتد لأكثر من 13 عامًا، يُعد الدكتور يوسف رميح أحد أبرز
           الأخصائيين في أمراض القلب، يجمع بين التميز الأكاديمي والرعاية الإنسانية
           المتكاملة. فيما يلي أبرز مؤهلاته وإنجازاته المهنية.
@@ -352,82 +420,37 @@
     <!-- Cards Grid -->
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
       <!-- Card 1 -->
-      <!-- <div
-        class="qualification-card fade-in-up bg-gray-100 dark:bg-gray-800 p-8 rounded-2xl shadow-lg transition-transform transform hover:-translate-y-3 hover:shadow-2xl"
-      >
-        <div
-          class="           bg-gradient-to-r from-blue-600 via-sky-500 to-blue-700
-           hover:from-blue-700 hover:via-sky-600 hover:to-blue-800
-           shadow-lg hover:shadow-blue-400/50 transition-all duration-500 ease-in-out
- icon-circle mb-6"
-          
-"
-        >
-          <i class="fas fa-user-md text-white text-2xl"></i>
-        </div>
-        <h3 class="text-2xl font-semibold mb-3 text-gray-900 dark:text-white">
-          <span class="lang-en">Dr. Youssef Saber Romih</span>
-          <span class="lang-ar hidden-lang">د. يوسف صابر رميح</span>
-        </h3>
-        <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
-          <span class="lang-en">
-            Specialist in Cardiology and Vascular Diseases with extensive experience in
-            diagnosis and interventional cardiac catheterization.
-          </span>
-          <span class="lang-ar hidden-lang">
-            أخصائي أمراض القلب والأوعية الدموية، بخبرة تمتد لأكثر من 13 عامًا في
-            تشخيص وعلاج أمراض القلب وقسطرة القلب التداخلية.
-          </span>
-        </p>
-      </div> -->
-
-      <!-- Card 2 -->
-      <div
-        class="qualification-card fade-in-up bg-gray-100 dark:bg-gray-800 p-8 rounded-2xl shadow-lg transition-transform transform hover:-translate-y-3 hover:shadow-2xl"
-      >
-        <div
-          class="           bg-gradient-to-r from-blue-600 via-sky-500 to-blue-700
-           hover:from-blue-700 hover:via-sky-600 hover:to-blue-800
-           shadow-lg hover:shadow-blue-400/50 transition-all duration-500 ease-in-out
- icon-circle mb-6"
-        >
+      <div class="qualification-card fade-in-up p-8 rounded-2xl shadow-lg transition-transform transform hover:-translate-y-3 hover:shadow-2xl"
+           style="background-color: var(--surface-color); color: var(--text-color);">
+        <div class="bg-gradient-to-r from-blue-600 via-sky-500 to-blue-700 icon-circle mb-6 shadow-lg">
           <i class="fas fa-graduation-cap text-white text-2xl"></i>
         </div>
-        <h3 class="text-2xl font-semibold mb-3 text-gray-900 dark:text-white">
+        <h3 class="text-2xl font-semibold mb-3">
           <span class="lang-en">Bachelor of Medicine and Surgery</span>
           <span class="lang-ar hidden-lang">بكالوريوس الطب والجراحة</span>
         </h3>
-        <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+        <p class="leading-relaxed">
           <span class="lang-en">
             Graduated from Al-Azhar University (2012), where his journey in medical
             excellence began.
           </span>
           <span class="lang-ar hidden-lang">
-            جامعة الأزهر – دفعة 2012، حيث بدأ مسيرته الطبية المتميزة التي جمعت بين
-            الدراسة الأكاديمية والتدريب العملي المتقدم.
+جامعة الأزهر – دفعة 2012، حيث بدأ مسيرته الطبية المتميزة التي جمعت بين الدراسة الأكاديمية والتدريب العملي المتقدم.
           </span>
         </p>
       </div>
 
-      <!-- Card 3 -->
-      <div
-        class="qualification-card fade-in-up bg-gray-100 dark:bg-gray-800 p-8 rounded-2xl shadow-lg transition-transform transform hover:-translate-y-3 hover:shadow-2xl"
-      >
-        <div
-          class="           bg-gradient-to-r from-blue-600 via-sky-500 to-blue-700
-           hover:from-blue-700 hover:via-sky-600 hover:to-blue-800
-           shadow-lg hover:shadow-blue-400/50 transition-all duration-500 ease-in-out
- icon-circle mb-6"
-          
-"
-        >
+      <!-- Card 2 -->
+      <div class="qualification-card fade-in-up p-8 rounded-2xl shadow-lg transition-transform transform hover:-translate-y-3 hover:shadow-2xl"
+           style="background-color: var(--surface-color); color: var(--text-color);">
+        <div class="bg-gradient-to-r from-blue-600 via-sky-500 to-blue-700 icon-circle mb-6 shadow-lg">
           <i class="fas fa-certificate text-white text-2xl"></i>
         </div>
-        <h3 class="text-2xl font-semibold mb-3 text-gray-900 dark:text-white">
+        <h3 class="text-2xl font-semibold mb-3">
           <span class="lang-en">Egyptian Fellowship in Cardiology</span>
           <span class="lang-ar hidden-lang">الزمالة المصرية لأمراض القلب</span>
         </h3>
-        <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+        <p class="leading-relaxed">
           <span class="lang-en">
             Earned from the National Heart Institute — a leading center for cardiology
             education in the Middle East.
@@ -439,25 +462,17 @@
         </p>
       </div>
 
-      <!-- Card 4 -->
-      <div
-        class="qualification-card fade-in-up bg-gray-100 dark:bg-gray-800 p-8 rounded-2xl shadow-lg transition-transform transform hover:-translate-y-3 hover:shadow-2xl"
-      >
-        <div
-          class="           bg-gradient-to-r from-blue-600 via-sky-500 to-blue-700
-           hover:from-blue-700 hover:via-sky-600 hover:to-blue-800
-           shadow-lg hover:shadow-blue-400/50 transition-all duration-500 ease-in-out
- icon-circle mb-6"
-          
-"
-        >
+      <!-- Card 3 -->
+      <div class="qualification-card fade-in-up p-8 rounded-2xl shadow-lg transition-transform transform hover:-translate-y-3 hover:shadow-2xl"
+           style="background-color: var(--surface-color); color: var(--text-color);">
+        <div class="bg-gradient-to-r from-blue-600 via-sky-500 to-blue-700 icon-circle mb-6 shadow-lg">
           <i class="fas fa-stethoscope text-white text-2xl"></i>
         </div>
-        <h3 class="text-2xl font-semibold mb-3 text-gray-900 dark:text-white">
+        <h3 class="text-2xl font-semibold mb-3">
           <span class="lang-en">Fellowship in Interventional Cardiology</span>
           <span class="lang-ar hidden-lang">زمالة قسطرة القلب التداخلية</span>
         </h3>
-        <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+        <p class="leading-relaxed">
           <span class="lang-en">
             Specialized training in advanced interventional catheterization procedures
             for coronary artery diseases.
@@ -468,25 +483,17 @@
         </p>
       </div>
 
-      <!-- Card 5 -->
-      <div
-        class="qualification-card fade-in-up bg-gray-100 dark:bg-gray-800 p-8 rounded-2xl shadow-lg transition-transform transform hover:-translate-y-3 hover:shadow-2xl"
-      >
-        <div
-          class="           bg-gradient-to-r from-blue-600 via-sky-500 to-blue-700
-           hover:from-blue-700 hover:via-sky-600 hover:to-blue-800
-           shadow-lg hover:shadow-blue-400/50 transition-all duration-500 ease-in-out
- icon-circle mb-6"
-          
-"
-        >
+      <!-- Card 4 -->
+      <div class="qualification-card fade-in-up p-8 rounded-2xl shadow-lg transition-transform transform hover:-translate-y-3 hover:shadow-2xl"
+           style="background-color: var(--surface-color); color: var(--text-color);">
+        <div class="bg-gradient-to-r from-blue-600 via-sky-500 to-blue-700 icon-circle mb-6 shadow-lg">
           <i class="fas fa-briefcase-medical text-white text-2xl"></i>
         </div>
-        <h3 class="text-2xl font-semibold mb-3 text-gray-900 dark:text-white">
+        <h3 class="text-2xl font-semibold mb-3">
           <span class="lang-en">Hospital Management Diploma</span>
           <span class="lang-ar hidden-lang">دبلومة إدارة المستشفيات</span>
         </h3>
-        <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+        <p class="leading-relaxed">
           <span class="lang-en">
             Ain Shams University (2018) — focused on leadership and hospital
             administration excellence.
@@ -498,25 +505,17 @@
         </p>
       </div>
 
-      <!-- Card 6 -->
-      <div
-        class="qualification-card fade-in-up bg-gray-100 dark:bg-gray-800 p-8 rounded-2xl shadow-lg transition-transform transform hover:-translate-y-3 hover:shadow-2xl"
-      >
-        <div
-          class="           bg-gradient-to-r from-blue-600 via-sky-500 to-blue-700
-           hover:from-blue-700 hover:via-sky-600 hover:to-blue-800
-           shadow-lg hover:shadow-blue-400/50 transition-all duration-500 ease-in-out
- icon-circle mb-6"
-          
-"
-        >
+      <!-- Card 5 -->
+      <div class="qualification-card fade-in-up p-8 rounded-2xl shadow-lg transition-transform transform hover:-translate-y-3 hover:shadow-2xl"
+           style="background-color: var(--surface-color); color: var(--text-color);">
+        <div class="bg-gradient-to-r from-blue-600 via-sky-500 to-blue-700 icon-circle mb-6 shadow-lg">
           <i class="fas fa-award text-white text-2xl"></i>
         </div>
-        <h3 class="text-2xl font-semibold mb-3 text-gray-900 dark:text-white">
+        <h3 class="text-2xl font-semibold mb-3">
           <span class="lang-en">Egyptian Board of Cardiology</span>
           <span class="lang-ar hidden-lang">البورد المصري لأمراض القلب</span>
         </h3>
-        <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+        <p class="leading-relaxed">
           <span class="lang-en">
             A high-level professional qualification confirming advanced expertise in
             cardiology and interventional care (2023).
@@ -527,11 +526,33 @@
           </span>
         </p>
       </div>
+
+      <!-- Card 6 -->
+      <div class="qualification-card fade-in-up p-8 rounded-2xl shadow-lg transition-transform transform hover:-translate-y-3 hover:shadow-2xl"
+           style="background-color: var(--surface-color); color: var(--text-color);">
+        <div class="bg-gradient-to-r from-blue-600 via-sky-500 to-blue-700 icon-circle mb-6 shadow-lg">
+          <i class="fas fa-users text-white text-2xl"></i>
+        </div>
+        <h3 class="text-2xl font-semibold mb-3">
+          <span class="lang-en">Professional Memberships & Echo Specialist</span>
+          <span class="lang-ar hidden-lang">عضوية مهنية وأخصائي الموجات الصوتية على القلب</span>
+        </h3>
+        <p class="leading-relaxed">
+          <span class="lang-en">
+            Member of the Egyptian and European Societies of Cardiology, 
+            and an echocardiography specialist at Al-Haram Hospital, 
+            also a member of the Egyptian Society of Cardiac Echocardiography.
+          </span>
+          <span class="lang-ar hidden-lang">
+            عضو الجمعية المصرية والأوروبية لأمراض القلب والأوعية الدموية، 
+            وأخصائي الموجات الصوتية (الإيكو) على القلب بمستشفى الهرم، 
+            وعضو الجمعية المصرية لأشعة الإيكو على القلب.
+          </span>
+        </p>
+      </div>
     </div>
   </div>
 </section>
-
-
 
 <!-- Scroll Animation Script -->
 <script>
@@ -548,20 +569,21 @@
 </script>
 <!-- Clinic Promo Section -->
 <section
-  id="clinic"
-  class="py-20 bg-gradient-to-br from-blue-50 to-white dark:from-gray-900 dark:to-gray-800 transition-colors duration-500"
+class="py-20 transition-colors duration-300"
+id="clinic"
+style="background-color: var(--bg-color); color: var(--text-color);"
 >
   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-in">
     <!-- Title -->
-    <h2 class="text-5xl font-bold mb-4 text-blue-700 dark:text-white">
-      <span class="lang-en">Dr. Yousef Cardiology Clinic</span>
-      <span class="lang-ar hidden-lang">عيادة د. يوسف لأمراض القلب</span>
+    <h2 class="text-5xl font-bold mb-4 text-blue-700 dark:text-white" style="color: var(--text-color);">
+      <span class="lang-en">Dr. Yousef Clinic</span>
+      <span class="lang-ar hidden-lang">عيادة د. يوسف </span>
     </h2>
     <div class="w-24 h-1 bg-blue-600 mx-auto mb-6 rounded-full"></div>
 
     <!-- Short Description -->
     <p
-      class="text-gray-700 dark:text-gray-300 text-lg max-w-3xl mx-auto leading-relaxed mb-12"
+      class="text-gray-700 text-lg max-w-3xl mx-auto leading-relaxed mb-12" style="color: var(--secondary-text-color);"
     >
       <span class="lang-en">
         At <strong>Dr. Yousef Cardiology Clinic</strong>, we provide precise
@@ -579,84 +601,90 @@
     <!-- Clinic Features -->
     <div class="grid md:grid-cols-3 gap-8 mb-16">
       <div
-        class="bg-white dark:bg-gray-700 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
+style="background-color: var(--surface-color); color: var(--text-color);"
+      class="bg-white dark:bg-gray-700 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
       >
         <i class="fas fa-heartbeat text-4xl text-blue-600 mb-4"></i>
-        <h4 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+        <h4 class="text-xl font-semibold mb-2">
           <span class="lang-en">Chest Pain & Heart Attacks</span>
           <span class="lang-ar hidden-lang">الذبحة الصدرية وجلطات القلب</span>
         </h4>
-        <p class="text-gray-600 dark:text-gray-300">
+        <p class="">
           <span class="lang-en">Diagnosis and treatment of angina and acute heart attacks.</span>
           <span class="lang-ar hidden-lang">تشخيص وعلاج الذبحة الصدرية وجلطات القلب الحادة.</span>
         </p>
       </div>
 
       <div
-        class="bg-white dark:bg-gray-700 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
+style="background-color: var(--surface-color); color: var(--text-color);"
+      class="bg-white dark:bg-gray-700 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
       >
         <i class="fas fa-bolt text-4xl text-blue-600 mb-4"></i>
-        <h4 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+        <h4 class="text-xl font-semibold mb-2">
           <span class="lang-en">Heart Rhythm Disorders</span>
           <span class="lang-ar hidden-lang">اضطراب كهرباء القلب</span>
         </h4>
-        <p class="text-gray-600 dark:text-gray-300">
+        <p class="">
           <span class="lang-en">Detection and management of electrical conduction abnormalities.</span>
           <span class="lang-ar hidden-lang">تشخيص وعلاج اختلال الضفيرة الكهربائية بالقلب.</span>
         </p>
       </div>
 
       <div
-        class="bg-white dark:bg-gray-700 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
+style="background-color: var(--surface-color); color: var(--text-color);"
+      class="bg-white dark:bg-gray-700 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
       >
         <i class="fas fa-heart-broken text-4xl text-blue-600 mb-4"></i>
-        <h4 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+        <h4 class="text-xl font-semibold mb-2">
           <span class="lang-en">Heart Failure Care</span>
           <span class="lang-ar hidden-lang">فشل عضلة القلب</span>
         </h4>
-        <p class="text-gray-600 dark:text-gray-300">
+        <p class="">
           <span class="lang-en">Accurate diagnosis and effective management of heart failure.</span>
           <span class="lang-ar hidden-lang">تشخيص وعلاج حالات ضعف أو فشل عضلة القلب.</span>
         </p>
       </div>
 
       <div
-        class="bg-white dark:bg-gray-700 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
+style="background-color: var(--surface-color); color: var(--text-color);"
+      class="bg-white dark:bg-gray-700 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
       >
         <i class="fas fa-tachometer-alt text-4xl text-blue-600 mb-4"></i>
-        <h4 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+        <h4 class="text-xl font-semibold mb-2">
           <span class="lang-en">Blood Pressure Disorders</span>
           <span class="lang-ar hidden-lang">ارتفاع ضغط الدم</span>
         </h4>
-        <p class="text-gray-600 dark:text-gray-300">
+        <p class="">
           <span class="lang-en">Diagnosis and treatment of high blood pressure.</span>
           <span class="lang-ar hidden-lang">تشخيص وعلاج حالات ارتفاع ضغط الدم.</span>
         </p>
       </div>
 
       <div
-        class="bg-white dark:bg-gray-700 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
+style="background-color: var(--surface-color); color: var(--text-color);"
+      class="bg-white dark:bg-gray-700 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
       >
         <i class="fas fa-stethoscope text-4xl text-blue-600 mb-4"></i>
-        <h4 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+        <h4 class="text-xl font-semibold mb-2">
           <span class="lang-en">Holter & BP Monitoring</span>
           <span class="lang-ar hidden-lang">جهاز الهولتر والضغط المتحرك</span>
         </h4>
-        <p class="text-gray-600 dark:text-gray-300">
+        <p class="">
           <span class="lang-en">24-hour Holter and mobile BP monitoring for precise evaluation.</span>
           <span class="lang-ar hidden-lang">تركيب أجهزة الهولتر والضغط المتحرك لتشخيص الحالات بدقة على مدار اليوم.</span>
         </p>
       </div>
 
       <div
-        class="bg-white dark:bg-gray-700 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
+style="background-color: var(--surface-color); color: var(--text-color);"
+      class="bg-white dark:bg-gray-700 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
       >
         <i class="fas fa-wave-square text-4xl text-blue-600 mb-4"></i>
-        <h4 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+        <h4 class="text-xl font-semibold mb-2">
           <span class="lang-en">Echo & Ultrasound</span>
           <span class="lang-ar hidden-lang">فحص الموجات الصوتية</span>
         </h4>
-        <p class="text-gray-600 dark:text-gray-300">
+        <p class="">
           <span class="lang-en">Cardiac ultrasound for detailed imaging of heart structure and function.</span>
           <span class="lang-ar hidden-lang">الكشف بالموجات الصوتية على القلب لتقييم دقيق لوظائف القلب وصماماته.</span>
         </p>
@@ -666,14 +694,16 @@
 
     <div class="text-center mt-10 fade-in mb-10">
   <a
-     href="#contact"
+     href="https://wa.me/201092225732?text=مرحبًا%20أود%20حجز%20موعد%20مع%20الدكتور"
+    target="_blank"
+    rel="noopener noreferrer"
     class="relative inline-block px-10 py-4 text-lg font-semibold text-white rounded-full 
            bg-gradient-to-r from-blue-600 via-sky-500 to-blue-700
            hover:from-blue-700 hover:via-sky-600 hover:to-blue-800
            shadow-lg hover:shadow-blue-400/50 transition-all duration-500 ease-in-out
            animate-pulse-slow"
   >
-    <span class="lang-en"  >Book Now</span>
+    <span class="lang-en" >Book Now</span>
     <span class="lang-ar hidden-lang"  >احجز الآن</span>
     <i class="fas fa-calendar-check ml-2"></i>
 
@@ -685,23 +715,23 @@
 </div>
 
     <!-- Clinic Locations -->
-    <div class="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
+    <div class="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto" >
       <!-- Main Clinic -->
       <div
-        class="bg-white dark:bg-gray-700 p-10 rounded-2xl shadow-xl text-center"
+        class="p-10 rounded-2xl shadow-xl text-center" style="background-color: var(--surface-color); color: var(--text-color);"
       >
-        <div class="flex justify-center items-center gap-3 mb-4">
+        <div class="flex justify-center items-center gap-3 mb-4" >
           <i class="fas fa-map-marked-alt text-3xl text-blue-600"></i>
-          <h3 class="text-2xl font-bold text-gray-900 dark:text-white lang-en">
+          <h3 class="text-2xl font-bold text-gray-900  lang-en" style="background-color: var(--surface-color); color: var(--text-color);">
             Main Clinic - Cairo
           </h3>
-          <h3 class="text-2xl font-bold text-gray-900 dark:text-white lang-ar hidden-lang">
+          <h3 class="text-2xl font-bold text-gray-900  lang-ar hidden-lang" style="background-color: var(--surface-color); color: var(--text-color);">
             العيادة الرئيسية - القاهرة
           </h3>
         </div>
 
-        <ul class="text-gray-700 dark:text-gray-300 space-y-3">
-          <li>
+        <ul class="text-gray-700  space-y-3">
+          <li style="background-color: var(--surface-color); color: var(--text-color);">
             <i class="fas fa-map-marker-alt text-blue-600 mr-2"></i>
             <span class="lang-en">
               Cairo – Gesr El Suez – El Eshreen St – In front of Mecca Juice – beside Al-Omaraa Supermarket
@@ -710,17 +740,19 @@
               القاهرة - جسر السويس - شارع العشرين - أمام عصارة مكة 
             </span>
           </li>
-          <li>
+          <li style="background-color: var(--surface-color); color: var(--text-color);">
             <i class="fas fa-phone-alt text-blue-600 mr-2"></i>
             <a href="tel:+201055796026" class="hover:text-blue-600">01055796026</a>
             <span class="mx-2 text-gray-400">|</span>
             <a href="tel:+201092225732" class="hover:text-blue-600">01092225732</a>
           </li>
-          <li>
+          <li style="background-color: var(--surface-color); color: var(--text-color);">
             <i class="fab fa-whatsapp text-green-500 mr-2"></i>
-            <a href="https://wa.me/201055796026" target="_blank" class="hover:text-green-500">WhatsApp</a>
+            <a href="https://wa.me/201092225732?text=مرحبًا%20أود%20حجز%20موعد%20مع%20الدكتور"
+                    target="_blank"
+                    rel="noopener noreferrer" class="hover:text-green-500">WhatsApp</a>
           </li>
-          <li>
+          <!-- <li>
             <i class="fas fa-location-arrow text-blue-600 mr-2"></i>
             <a
               href="https://maps.google.com/?q=جسر+السويس+شارع+العشرين+القاهرة"
@@ -728,44 +760,46 @@
               class="hover:text-blue-600"
               >Google Maps</a
             >
-          </li>
+          </li> -->
         </ul>
       </div>
 
       <!-- Second Branch -->
-<div class="bg-white dark:bg-gray-700 p-10 rounded-2xl shadow-xl text-center">
-  <div class="flex justify-center items-center gap-3 mb-4">
+<div class="bg-white dark:bg-gray-700 p-10 rounded-2xl shadow-xl text-center" style="background-color: var(--surface-color); color: var(--text-color);">
+  <div class="flex justify-center items-center gap-3 mb-4"  >
     <i class="fas fa-map-marked-alt text-3xl text-blue-600"></i>
-    <h3 class="text-2xl font-bold text-gray-900 dark:text-white lang-en">
+    <h3 class="text-2xl font-bold text-gray-900  lang-en" style="background-color: var(--surface-color); color: var(--text-color);">
       Al-Bashir Clinics
     </h3>
-    <h3 class="text-2xl font-bold text-gray-900 dark:text-white lang-ar hidden-lang">
+    <h3 class="text-2xl font-bold text-gray-900  lang-ar hidden-lang" style="background-color: var(--surface-color); color: var(--text-color);">
       عيادات البشير
     </h3>
   </div>
 
-  <ul class="text-gray-700 dark:text-gray-300 space-y-3">
-    <li>
+  <ul class="text-gray-700 space-y-3">
+    <li style="background-color: var(--surface-color); color: var(--text-color);">
       <i class="fas fa-map-marker-alt text-blue-600 mr-2"></i>
       <span class="lang-en">Al-Burj St, Intersection with Al-Arbaeen St, Cairo</span>
       <span class="lang-ar hidden-lang">شارع البرج تقاطع مع شارع الأربعين، القاهرة</span>
     </li>
-   <li>
+   <li style="background-color: var(--surface-color); color: var(--text-color);">
             <i class="fas fa-phone-alt text-blue-600 mr-2"></i>
             <a href="tel:+201055796026" class="hover:text-blue-600">01055796026</a>
             <span class="mx-2 text-gray-400">|</span>
             <a href="tel:+201092225732" class="hover:text-blue-600">01092225732</a>
           </li>
-    <li>
+    <li style="background-color: var(--surface-color); color: var(--text-color);">
       <i class="fab fa-whatsapp text-green-500 mr-2"></i>
-      <a href="https://wa.me/201055796026" target="_blank" class="hover:text-green-500">WhatsApp</a>
+      <a href="https://wa.me/201055796026?text=مرحبًا%20أود%20حجز%20موعد%20مع%20الدكتور"
+                    target="_blank"
+                    rel="noopener noreferrer" class="hover:text-green-500">WhatsApp</a>
     </li>
-    <li>
+    <!-- <li>
       <i class="fas fa-location-arrow text-blue-600 mr-2"></i>
       <a href="https://maps.google.com/?q=Al-Burj+St,+Intersection+with+Al-Arbaeen+St,+Cairo" target="_blank" class="hover:text-blue-600">
         Google Maps
       </a>
-    </li>
+    </li> -->
   </ul>
 </div>
 
@@ -777,176 +811,112 @@
 <!-- Services Section -->
 <section
   id="services"
-  class="py-20 bg-gradient-to-b from-white to-blue-50 dark:from-gray-900 dark:to-gray-800 transition-colors duration-500"
->
+  class="py-20 transition-colors duration-500"
+style="background-color: var(--bg-color); color: var(--text-color);">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="fade-in text-center mb-16">
-  <h2 class="text-4xl font-bold mb-4 text-gray-900 dark:text-white">
-    <span class="lang-en">Clinic Services</span>
-    <span class="lang-ar hidden-lang">خدمات العيادة</span>
-  </h2>
-
-  <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
-
-  <p
-    class="text-gray-600 dark:text-gray-300 mt-6 text-lg max-w-3xl mx-auto leading-relaxed"
-  >
-    <span class="lang-en">
-      A fully integrated clinic specializing in all heart and vascular diseases.  
-      At <strong>Dr. Yousef Cardiology Clinic</strong>, we provide comprehensive 
-      heart and vascular care using the latest diagnostic devices to ensure 
-      accurate results and the highest level of comfort for every patient.
-    </span>
-
-    <span class="lang-ar hidden-lang">
-      <strong>عيادة كاملة متكاملة</strong> لكل ما يخص أمراض القلب والأوعية
-      الدموية. في <strong>عيادة د. يوسف</strong> نوفر لك رعاية قلبية متكاملة
-      بأحدث الأجهزة التشخيصية التي تضمن دقة الفحص وراحة المريض، ونهتم بصحتك في كل خطوة.
-    </span>
-  </p>
-</div>
+    <div class="fade-in text-center mb-16">
+      <h2 class="text-4xl font-bold mb-4" style="color: var(--text-color);">
+        <span class="lang-en">Clinic Services</span>
+        <span class="lang-ar hidden-lang">خدمات العيادة</span>
+      </h2>
+      <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+      <p class="mt-6 text-lg max-w-3xl mx-auto leading-relaxed" style="color: var(--secondary-text-color);">
+        <span class="lang-en">
+          A fully integrated clinic specializing in all heart and vascular diseases.  
+          At <strong>Dr. Yousef Cardiology Clinic</strong>, we provide comprehensive 
+          heart and vascular care using the latest diagnostic devices to ensure 
+          accurate results and the highest level of comfort for every patient.
+        </span>
+        <span class="lang-ar hidden-lang">
+          <strong>عيادة كاملة متكاملة</strong> لكل ما يخص أمراض القلب والأوعية
+          الدموية. في <strong>عيادة د. يوسف</strong> نوفر لك رعاية قلبية متكاملة
+          بأحدث الأجهزة التشخيصية التي تضمن دقة الفحص وراحة المريض، ونهتم بصحتك في كل خطوة.
+        </span>
+      </p>
+    </div>
 
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
       <!-- ECG -->
-      <div
-        class="fade-in bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300"
-      >
+      <div class="fade-in p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300"
+          style="background-color: var(--surface-color); color: var(--text-color);">
         <i class="fas fa-heartbeat text-4xl text-blue-600 mb-4"></i>
-        <h3
-          class="text-xl font-semibold mb-3 text-gray-900 dark:text-white lang-en"
-        >
-          ECG (Electrocardiogram)
+        <h3 class="text-xl font-semibold mb-3">
+          <span class="lang-en">ECG (Electrocardiogram)</span>
+          <span class="lang-ar hidden-lang">رسم القلب</span>
         </h3>
-        <h3
-          class="text-xl font-semibold mb-3 text-gray-900 dark:text-white lang-ar hidden-lang"
-        >
-          رسم القلب
-        </h3>
-        <p class="text-gray-600 dark:text-gray-300 lang-en">
-          Quick and accurate diagnosis of heart rhythm and electrical activity.
-        </p>
-        <p class="text-gray-600 dark:text-gray-300 lang-ar hidden-lang">
-          تشخيص سريع ودقيق لنشاط القلب الكهربائي واكتشاف أي اضطرابات.
+        <p style="color: var(--secondary-text-color);">
+          <span class="lang-en">Quick and accurate diagnosis of heart rhythm and electrical activity.</span>
+          <span class="lang-ar hidden-lang">تشخيص سريع ودقيق لنشاط القلب الكهربائي واكتشاف أي اضطرابات.</span>
         </p>
       </div>
 
       <!-- Echo -->
-      <div
-        class="fade-in bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300"
-      >
+      <div class="fade-in p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300"
+          style="background-color: var(--surface-color); color: var(--text-color);">
         <i class="fas fa-stethoscope text-4xl text-blue-600 mb-4"></i>
-        <h3
-          class="text-xl font-semibold mb-3 text-gray-900 dark:text-white lang-en"
-        >
-          Echocardiography (Echo)
+        <h3 class="text-xl font-semibold mb-3">
+          <span class="lang-en">Echocardiography (Echo)</span>
+          <span class="lang-ar hidden-lang">موجات صوتية (إيكو) على القلب</span>
         </h3>
-        <h3
-          class="text-xl font-semibold mb-3 text-gray-900 dark:text-white lang-ar hidden-lang"
-        >
-          موجات صوتية (إيكو) على القلب
-        </h3>
-        <p class="text-gray-600 dark:text-gray-300 lang-en">
-          High-resolution ultrasound imaging for assessing heart structure and
-          function.
-        </p>
-        <p class="text-gray-600 dark:text-gray-300 lang-ar hidden-lang">
-          فحص بالموجات الصوتية لتقييم بنية القلب ووظائفه بدقة عالية.
+        <p style="color: var(--secondary-text-color);">
+          <span class="lang-en">High-resolution ultrasound imaging for assessing heart structure and function.</span>
+          <span class="lang-ar hidden-lang">فحص بالموجات الصوتية لتقييم بنية القلب ووظائفه بدقة عالية.</span>
         </p>
       </div>
 
       <!-- Holter -->
-      <div
-        class="fade-in bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300"
-      >
+      <div class="fade-in p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300"
+          style="background-color: var(--surface-color); color: var(--text-color);">
         <i class="fas fa-clock text-4xl text-blue-600 mb-4"></i>
-        <h3
-          class="text-xl font-semibold mb-3 text-gray-900 dark:text-white lang-en"
-        >
-          Holter Monitor (24–48 Hours)
+        <h3 class="text-xl font-semibold mb-3">
+          <span class="lang-en">Holter Monitor (24–48 Hours)</span>
+          <span class="lang-ar hidden-lang">جهاز هولتر 24–48 ساعة</span>
         </h3>
-        <h3
-          class="text-xl font-semibold mb-3 text-gray-900 dark:text-white lang-ar hidden-lang"
-        >
-          جهاز هولتر 24–48 ساعة
-        </h3>
-        <p class="text-gray-600 dark:text-gray-300 lang-en">
-          Continuous monitoring to detect irregular heartbeats and hidden
-          arrhythmias.
-        </p>
-        <p class="text-gray-600 dark:text-gray-300 lang-ar hidden-lang">
-          مراقبة مستمرة لضربات القلب لتشخيص اضطرابات النبض والكهرباء وأسباب
-          الإغماء.
+        <p style="color: var(--secondary-text-color);">
+          <span class="lang-en">Continuous monitoring to detect irregular heartbeats and hidden arrhythmias.</span>
+          <span class="lang-ar hidden-lang">مراقبة مستمرة لضربات القلب لتشخيص اضطرابات النبض والكهرباء وأسباب الإغماء.</span>
         </p>
       </div>
 
       <!-- Blood Pressure -->
-      <div
-        class="fade-in bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300"
-      >
+      <div class="fade-in p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300"
+          style="background-color: var(--surface-color); color: var(--text-color);">
         <i class="fas fa-tachometer-alt text-4xl text-blue-600 mb-4"></i>
-        <h3
-          class="text-xl font-semibold mb-3 text-gray-900 dark:text-white lang-en"
-        >
-          Ambulatory BP Monitor (24–48h)
+        <h3 class="text-xl font-semibold mb-3">
+          <span class="lang-en">Ambulatory BP Monitor (24–48h)</span>
+          <span class="lang-ar hidden-lang">جهاز قياس الضغط المتنقل 24–48 ساعة</span>
         </h3>
-        <h3
-          class="text-xl font-semibold mb-3 text-gray-900 dark:text-white lang-ar hidden-lang"
-        >
-          جهاز قياس الضغط المتنقل 24–48 ساعة
-        </h3>
-        <p class="text-gray-600 dark:text-gray-300 lang-en">
-          Accurate monitoring of blood pressure to assess treatment efficiency.
-        </p>
-        <p class="text-gray-600 dark:text-gray-300 lang-ar hidden-lang">
-          مراقبة دقيقة لضغط الدم لتشخيص ارتفاعه ومتابعة تأثير العلاج على مدار
-          اليوم.
+        <p style="color: var(--secondary-text-color);">
+          <span class="lang-en">Accurate monitoring of blood pressure to assess treatment efficiency.</span>
+          <span class="lang-ar hidden-lang">مراقبة دقيقة لضغط الدم لتشخيص ارتفاعه ومتابعة تأثير العلاج على مدار اليوم.</span>
         </p>
       </div>
 
       <!-- Heart Failure & Angina -->
-      <div
-        class="fade-in bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300"
-      >
+      <div class="fade-in p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300"
+          style="background-color: var(--surface-color); color: var(--text-color);">
         <i class="fas fa-procedures text-4xl text-blue-600 mb-4"></i>
-        <h3
-          class="text-xl font-semibold mb-3 text-gray-900 dark:text-white lang-en"
-        >
-          Cardiac Diseases Management
+        <h3 class="text-xl font-semibold mb-3">
+          <span class="lang-en">Cardiac Diseases Management</span>
+          <span class="lang-ar hidden-lang">تشخيص وعلاج أمراض القلب</span>
         </h3>
-        <h3
-          class="text-xl font-semibold mb-3 text-gray-900 dark:text-white lang-ar hidden-lang"
-        >
-          تشخيص وعلاج أمراض القلب
-        </h3>
-        <p class="text-gray-600 dark:text-gray-300 lang-en">
-          Diagnosis and treatment of angina, heart failure, and hypertension.
-        </p>
-        <p class="text-gray-600 dark:text-gray-300 lang-ar hidden-lang">
-          تشخيص وعلاج أمراض الذبحة الصدرية، جلطات القلب، فشل عضلة القلب،
-          وارتفاع الضغط.
+        <p style="color: var(--secondary-text-color);">
+          <span class="lang-en">Diagnosis and treatment of angina, heart failure, and hypertension.</span>
+          <span class="lang-ar hidden-lang">تشخيص وعلاج أمراض الذبحة الصدرية، جلطات القلب، فشل عضلة القلب، وارتفاع الضغط.</span>
         </p>
       </div>
 
       <!-- Consultation -->
-      <div
-        class="fade-in bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300"
-      >
+      <div class="fade-in p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300"
+          style="background-color: var(--surface-color); color: var(--text-color);">
         <i class="fas fa-user-md text-4xl text-blue-600 mb-4"></i>
-        <h3
-          class="text-xl font-semibold mb-3 text-gray-900 dark:text-white lang-en"
-        >
-          Consultation & Follow-up
+        <h3 class="text-xl font-semibold mb-3">
+          <span class="lang-en">Consultation & Follow-up</span>
+          <span class="lang-ar hidden-lang">الاستشارة والمتابعة</span>
         </h3>
-        <h3
-          class="text-xl font-semibold mb-3 text-gray-900 dark:text-white lang-ar hidden-lang"
-        >
-          الاستشارة والمتابعة
-        </h3>
-        <p class="text-gray-600 dark:text-gray-300 lang-en">
-          Continuous care and personalized medical follow-up for every patient.
-        </p>
-        <p class="text-gray-600 dark:text-gray-300 lang-ar hidden-lang">
-          رعاية مستمرة ومتابعة دقيقة للحالات الطبية لضمان أفضل النتائج.
+        <p style="color: var(--secondary-text-color);">
+          <span class="lang-en">Continuous care and personalized medical follow-up for every patient.</span>
+          <span class="lang-ar hidden-lang">رعاية مستمرة ومتابعة دقيقة للحالات الطبية لضمان أفضل النتائج.</span>
         </p>
       </div>
     </div>
@@ -956,7 +926,7 @@
 <!-- Gallery Section -->
 <section
   id="gallery"
-  class="py-20 bg-white dark:bg-gray-900 transition-colors duration-300"
+  class="py-20 bg-white  transition-colors duration-300"
 >
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="fade-in text-center mb-16">
@@ -981,12 +951,12 @@
         <div
           class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center text-center transition-opacity duration-500"
         >
-          <p class="text-white text-lg font-semibold lang-en">
-            Modern Consultation Room
-          </p>
-          <p class="text-white text-lg font-semibold lang-ar hidden-lang">
-            غرفة الاستشارة الحديثة
-          </p>
+<p class="text-white text-lg font-semibold lang-en">
+  Moments of Medical Excellence
+</p>
+<p class="text-white text-lg font-semibold lang-ar hidden-lang">
+  لحظات من التميّز الطبي
+</p>
         </div>
       </div>
 
@@ -1002,12 +972,12 @@
         <div
           class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center text-center transition-opacity duration-500"
         >
-          <p class="text-white text-lg font-semibold lang-en">
-            Advanced ECG Equipment
-          </p>
-          <p class="text-white text-lg font-semibold lang-ar hidden-lang">
-            أجهزة تخطيط القلب المتقدمة
-          </p>
+     <p class="text-white text-lg font-semibold lang-en">
+  Dr. Youssef Saber Romih — Excellence in Cardiology
+</p>
+<p class="text-white text-lg font-semibold lang-ar hidden-lang">
+  د. يوسف صابر رميح — تميّز في طب القلب
+</p>
         </div>
       </div>
 
@@ -1023,12 +993,14 @@
         <div
           class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center text-center transition-opacity duration-500"
         >
-          <p class="text-white text-lg font-semibold lang-en">
-            Echocardiography Suite
-          </p>
-          <p class="text-white text-lg font-semibold lang-ar hidden-lang">
-            جناح الموجات فوق الصوتية
-          </p>
+                 <p class="text-white text-lg font-semibold lang-en">
+      Holder of the Egyptian Fellowship in Cardiology and Cardiovascular Diseases. <br>
+      Member of the Egyptian and European Societies of Cardiology and Cardiovascular Medicine.
+    </p>
+    <p class="text-white text-lg font-semibold lang-ar hidden-lang">
+      حاصل على الزمالة المصرية لأمراض القلب والأوعية الدموية. <br>
+      عضو الجمعية المصرية والأوروبية لأمراض القلب والأوعية الدموية.
+    </p>
         </div>
       </div>
 
@@ -1044,12 +1016,12 @@
         <div
           class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center text-center transition-opacity duration-500"
         >
-          <p class="text-white text-lg font-semibold lang-en">
-            Comfortable Waiting Area
-          </p>
-          <p class="text-white text-lg font-semibold lang-ar hidden-lang">
-            منطقة انتظار مريحة
-          </p>
+     <p class="text-white text-lg font-semibold lang-en">
+  Honored with Fellowship — A Journey of Excellence
+</p>
+<p class="text-white text-lg font-semibold lang-ar hidden-lang">
+  نيل الزمالة — مسيرة من التميّز والإنجاز
+</p>
         </div>
       </div>
 
@@ -1065,12 +1037,13 @@
         <div
           class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center text-center transition-opacity duration-500"
         >
-          <p class="text-white text-lg font-semibold lang-en">
-            State-of-the-Art Cath Lab
-          </p>
-          <p class="text-white text-lg font-semibold lang-ar hidden-lang">
-            مختبر قسطرة متطور
-          </p>
+        
+    <p class="text-white text-lg font-semibold lang-en">
+  Excellence in Cardiology Care
+</p>
+<p class="text-white text-lg font-semibold lang-ar hidden-lang">
+  تميّز في رعاية أمراض القلب
+</p>
         </div>
       </div>
 
@@ -1086,12 +1059,12 @@
         <div
           class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center text-center transition-opacity duration-500"
         >
-          <p class="text-white text-lg font-semibold lang-en">
-            Post-Procedure Recovery
-          </p>
-          <p class="text-white text-lg font-semibold lang-ar hidden-lang">
-            غرفة التعافي بعد الإجراء
-          </p>
+       <p class="text-white text-lg font-semibold lang-en">
+  Dedicated to Every Heartbeat
+</p>
+<p class="text-white text-lg font-semibold lang-ar hidden-lang">
+  نكرّس الجهد من أجل كل نبضة قلب
+</p>
         </div>
       </div>
 
@@ -1107,12 +1080,12 @@
         <div
           class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center text-center transition-opacity duration-500"
         >
-          <p class="text-white text-lg font-semibold lang-en">
-            Post-Procedure Recovery
-          </p>
-          <p class="text-white text-lg font-semibold lang-ar hidden-lang">
-            غرفة التعافي بعد الإجراء
-          </p>
+<p class="text-white text-lg font-semibold lang-en">
+  Precision and Dedication in Every Procedure
+</p>
+<p class="text-white text-lg font-semibold lang-ar hidden-lang">
+  دقة وإخلاص في كل إجراء طبي
+</p>
         </div>
       </div>
       <!-- Gallery Item -->
@@ -1127,12 +1100,12 @@
         <div
           class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center text-center transition-opacity duration-500"
         >
-          <p class="text-white text-lg font-semibold lang-en">
-            Post-Procedure Recovery
-          </p>
-          <p class="text-white text-lg font-semibold lang-ar hidden-lang">
-            غرفة التعافي بعد الإجراء
-          </p>
+     <p class="text-white text-lg font-semibold lang-en">
+  Excellence, Teamwork, and Trust — The Core of Our Mission
+</p>
+<p class="text-white text-lg font-semibold lang-ar hidden-lang">
+  التميّز والعمل الجماعي والثقة — جوهر رسالتنا
+</p>
         </div>
       </div>
       <!-- Gallery Item -->
@@ -1167,12 +1140,12 @@
         <div
           class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center text-center transition-opacity duration-500"
         >
-          <p class="text-white text-lg font-semibold lang-en">
-            Post-Procedure Recovery
-          </p>
-          <p class="text-white text-lg font-semibold lang-ar hidden-lang">
-            غرفة التعافي بعد الإجراء
-          </p>
+      <p class="text-white text-lg font-semibold lang-en">
+  Excellence, Teamwork, and Trust — The Core of Our Mission
+</p>
+<p class="text-white text-lg font-semibold lang-ar hidden-lang">
+  التميّز والعمل الجماعي والثقة — جوهر رسالتنا
+</p>
         </div>
       </div>
       <!-- Gallery Item -->
@@ -1187,12 +1160,12 @@
         <div
           class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center text-center transition-opacity duration-500"
         >
-          <p class="text-white text-lg font-semibold lang-en">
-            Post-Procedure Recovery
-          </p>
-          <p class="text-white text-lg font-semibold lang-ar hidden-lang">
-            غرفة التعافي بعد الإجراء
-          </p>
+        <p class="text-white text-lg font-semibold lang-en">
+  A United Team Saving Hearts Together
+</p>
+<p class="text-white text-lg font-semibold lang-ar hidden-lang">
+  فريق واحد ينقذ القلوب معًا
+</p>
         </div>
       </div>
       <!-- Gallery Item -->
@@ -1207,12 +1180,15 @@
         <div
           class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center text-center transition-opacity duration-500"
         >
-          <p class="text-white text-lg font-semibold lang-en">
-            Post-Procedure Recovery
-          </p>
-          <p class="text-white text-lg font-semibold lang-ar hidden-lang">
-            غرفة التعافي بعد الإجراء
-          </p>
+         <p class="text-white text-lg font-semibold lang-en">
+      Cardiologist and Catheterization Specialist. <br>
+      Specialist in Diagnostic and Interventional Cardiology at Al-Haram Specialized Hospital. <br>
+      Echocardiography (Echo) Specialist.
+    </p>
+    <p class="text-white text-lg font-semibold lang-ar hidden-lang">
+      أخصائي أمراض القلب والقسطرة. <br>
+      أخصائي القسطرة التشخيصية والدوائية 
+    </p>
         </div>
       </div>
     </div>
@@ -1221,9 +1197,9 @@
   </div>
     <div class="text-center mt-10 fade-in mb-10">
   <a
-     href="https://wa.me/201092225732"
-      target="_blank"
-      rel="noopener noreferrer"
+    href="https://wa.me/201092225732?text=مرحبًا%20أود%20حجز%20موعد%20مع%20الدكتور"
+    target="_blank"
+    rel="noopener noreferrer"
     class="relative inline-block px-10 py-4 text-lg font-semibold text-white rounded-full 
            bg-gradient-to-r from-blue-600 via-sky-500 to-blue-700
            hover:from-blue-700 hover:via-sky-600 hover:to-blue-800
@@ -1321,12 +1297,13 @@
         <div class="indicator" data-slide="4"></div>
       </div>
     </div>
-    <div class="max-w-3xl mx-auto mt-12 text-center bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8">
+    <div class="max-w-3xl mx-auto mt-12 text-center rounded-2xl shadow-lg p-8 transition-colors duration-300"
+     style="background-color: var(--card-bg); color: var(--text-color);">
       <h3 class="text-2xl font-semibold mb-4 text-theme-primary">
         <span class="lang-en">Leave Your Feedback</span>
         <span class="lang-ar hidden-lang">شاركنا رأيك</span>
       </h3>
-      <p class="text-gray-600 dark:text-gray-300 mb-6 lang-ar">
+      <p class=" mb-6 lang-ar" style="color: var(--secondary-text-color);">
         لو حابب تسيب تعليقك أو تجربتك مع الدكتور، اكتبه هنا وسيتم إرساله مباشرة عبر واتساب.
       </p>
 
@@ -1335,6 +1312,7 @@
         rows="4"
         placeholder="اكتب تعليقك هنا..."
         class="w-full rounded-xl border border-gray-300 dark:border-gray-600 p-3 text-gray-800 dark:text-gray-100 bg-gray-50 dark:bg-gray-700 focus:ring-2 focus:ring-blue-500 outline-none transition-all duration-300"
+        style="background-color: var(--bg-color);"
       ></textarea>
 
       <button
@@ -1373,16 +1351,15 @@
               تواصل معنا
             </h3>
          <div class="space-y-6 mb-10">
-
               <!-- Clinic 1 -->
-              <div class="p-6 bg-gray-50 dark:bg-gray-800 rounded-lg shadow-md">
+              <div class="p-6 bg-gray-50 dark:bg-gray-800 rounded-lg shadow-md bg-theme-primary p-6 rounded-lg shadow-theme  card-hover transition-colors duration-300" style="background-color: var(--card-bg); color: var(--text-color);">
                 <h4 class="text-xl font-semibold mb-2 lang-en">Main Clinic</h4>
                 <h4 class="text-xl font-semibold mb-2 lang-ar hidden-lang">العيادة الرئيسية</h4>
                 
                 <p class="text-gray-600 dark:text-gray-300 lang-en">Cairo - Gesr El-Suez - 20th Street - In front of Makkah Press</p>
                 <p class="text-gray-600 dark:text-gray-300 lang-ar hidden-lang">القاهرة - جسر السويس - شارع العشرين - أمام عصارة مكة</p>
                 
-                <div class=" flex-wrap">
+                <div class="flex flex-wrap gap-2">
                   <a href="tel:+201055796026" class="flex items-center space-x-2 text-blue-600 hover:underline gap-2">
                     <i class="fas fa-phone"></i>
                     <span>01055796026</span>
@@ -1398,7 +1375,7 @@
                 </div>
               </div>
    <!-- Clinic 2 -->
-<div class="p-6 bg-gray-50 dark:bg-gray-800 rounded-lg shadow-md">
+<div class="p-6 bg-gray-50 dark:bg-gray-800 rounded-lg shadow-md bg-theme-primary p-6 rounded-lg shadow-theme  card-hover transition-colors duration-300" style="background-color: var(--card-bg); color: var(--text-color);">
   <h4 class="text-xl font-semibold mb-2 lang-en">Al-Bashir Clinics</h4>
   <h4 class="text-xl font-semibold mb-2 lang-ar hidden-lang">عيادات البشير</h4>
   
@@ -1422,7 +1399,7 @@
 </div>
 
 
-    </div>
+             </div>
             <div class="flex space-x-4">
               <a
                 href="https://www.facebook.com/share/16fpL15cXz/"
@@ -1433,9 +1410,9 @@
                 <i class="fab fa-facebook-f"></i>
               </a>
               <a
-                href="https://wa.me/201092225732"
-                target="_blank"
-                rel="noopener noreferrer"
+              href="https://wa.me/201092225732?text=مرحبًا%20أود%20حجز%20موعد%20مع%20الدكتور"
+              target="_blank"
+              rel="noopener noreferrer"
                 class="social-icon social-whatsapp text-white"
               >
                 <i class="fab fa-whatsapp"></i>
@@ -1459,48 +1436,67 @@
             </div>
           </div>
         <div class="fade-in">
-  <form id="appointmentForm" class="bg-gray-50 p-8 rounded-lg shadow-lg transition-colors duration-300">
-
-    <div class="grid md:grid-cols-2 gap-4 mb-4">
-      <div>
-        <label for="firstName" class="block text-sm font-medium mb-2 lang-en">First Name</label>
-        <label for="firstName" class="block text-sm font-medium mb-2 lang-ar hidden-lang">الاسم الأول</label>
-        <input type="text" id="firstName" name="firstName" required class="w-full px-4 py-2 border rounded-md" />
-      </div>
-      <div>
-        <label for="lastName" class="block text-sm font-medium mb-2 lang-en">Last Name</label>
-        <label for="lastName" class="block text-sm font-medium mb-2 lang-ar hidden-lang">اسم العائلة</label>
-        <input type="text" id="lastName" name="lastName" required class="w-full px-4 py-2 border rounded-md" />
-      </div>
+<form id="appointmentForm" class="bg-gray-50 p-8 rounded-lg shadow-lg transition-colors duration-300">
+  <div class="grid md:grid-cols-2 gap-4 mb-4">
+    <div>
+      <label for="firstName" class="block text-sm font-medium mb-2 lang-en">First Name</label>
+      <label for="firstName" class="block text-sm font-medium mb-2 lang-ar hidden-lang">الاسم الأول</label>
+      <input type="text" id="firstName" name="firstName" required class="w-full px-4 py-2 border rounded-md" />
     </div>
 
-    <div class="mb-4">
-      <label for="email" class="block text-sm font-medium mb-2 lang-en">Email</label>
-      <label for="email" class="block text-sm font-medium mb-2 lang-ar hidden-lang">البريد الإلكتروني</label>
-      <input type="email" id="email" name="email" required class="w-full px-4 py-2 border rounded-md" />
+    <div>
+      <label for="lastName" class="block text-sm font-medium mb-2 lang-en">Last Name</label>
+      <label for="lastName" class="block text-sm font-medium mb-2 lang-ar hidden-lang">اسم العائلة</label>
+      <input type="text" id="lastName" name="lastName" required class="w-full px-4 py-2 border rounded-md" />
     </div>
+  </div>
 
-    <div class="mb-4">
-      <label for="phone" class="block text-sm font-medium mb-2 lang-en">Phone</label>
-      <label for="phone" class="block text-sm font-medium mb-2 lang-ar hidden-lang">الهاتف</label>
-      <input type="tel" id="phone" name="phone" required class="w-full px-4 py-2 border rounded-md" />
-    </div>
+  <div class="mb-4">
+    <label for="age" class="block text-sm font-medium mb-2 lang-en">Age</label>
+    <label for="age" class="block text-sm font-medium mb-2 lang-ar hidden-lang">العمر</label>
+    <input type="number" id="age" name="age" required class="w-full px-4 py-2 border rounded-md" />
+  </div>
+<div class="mb-4">
+  <!-- Labels -->
+  <label for="gender" class="block text-sm font-medium mb-2 text-gray-700 dark:text-gray-200 lang-en">Gender</label>
+  <label for="gender" class="block text-sm font-medium mb-2 text-gray-700 dark:text-gray-200 lang-ar hidden-lang">النوع</label>
 
-    <div class="mb-6">
-      <label for="message" class="block text-sm font-medium mb-2 lang-en">Message</label>
-      <label for="message" class="block text-sm font-medium mb-2 lang-ar hidden-lang">الرسالة</label>
-      <textarea id="message" name="message" rows="4" required class="w-full px-4 py-2 border rounded-md"></textarea>
-    </div>
+  <!-- Select -->
+<select id="gender" name="gender" required
+style="background-color: var(--bg-color); color: var(--text-color); border: 1px solid var(--border-color);"
+  class="w-full px-4 py-2 border rounded-md
+        
+         focus:ring-2 focus:ring-blue-500 focus:border-blue-500
+         appearance-none dark:appearance-none
+         transition-all duration-200">
+    <option value="" disabled selected>
+    </option>
+    <option value="Male" class="lang-en">Male</option>
+    <option value="Female" class="lang-en">Female</option>
+    <option value="ذكر" class="lang-ar hidden-lang">ذكر</option>
+    <option value="أنثى" class="lang-ar hidden-lang">أنثى</option>
+  </select>
+</div>
 
-    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-md font-semibold bg-gradient-to-r from-blue-600 via-sky-500 to-blue-700
-           hover:from-blue-700 hover:via-sky-600 hover:to-blue-800
-           shadow-lg hover:shadow-blue-400/50 transition-all duration-500 ease-in-out
-">
-      <span class="lang-en">Send Message</span>
-      <span class="lang-ar hidden-lang">إرسال الرسالة</span>
-    </button>
 
-  </form>
+
+  <div class="mb-6">
+<label for="complaint" class="block text-sm font-medium mb-2 lang-en">
+  Health Concern
+</label>
+<label for="complaint" class="block text-sm font-medium mb-2 lang-ar hidden-lang">
+  ملاحظات الحالة الصحية
+</label>
+    <textarea id="complaint" name="complaint" rows="4" required class="w-full px-4 py-2 border rounded-md"></textarea>
+  </div>
+
+  <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-md font-semibold bg-gradient-to-r from-blue-600 via-sky-500 to-blue-700
+         hover:from-blue-700 hover:via-sky-600 hover:to-blue-800
+         shadow-lg hover:shadow-blue-400/50 transition-all duration-500 ease-in-out">
+    <span class="lang-en">Book Appointment</span>
+    <span class="lang-ar hidden-lang">حجز موعد</span>
+  </button>
+</form>
 </div>
         </div>
       </div>
@@ -1515,8 +1511,21 @@
       <i class="fab fa-whatsapp"></i>
     </a>
     <!-- Footer -->
-    <footer class="bg-gray-900 dark:bg-gray-950 text-white py-12">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<footer
+  class="relative text-white py-12"
+  style="
+    background-image: url('./assets/download.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    
+  "
+>
+  <!-- Overlay سوداء نصف شفافة -->
+  <div class="absolute inset-0 bg-black bg-opacity-80"></div>
+
+  <!-- المحتوى فوق الـ overlay -->
+  <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid md:grid-cols-3 gap-8">
           <div>
             <div class="flex items-center space-x-3 mb-4 gap-2">
@@ -1526,22 +1535,22 @@
                 <span class="lang-ar hidden-lang">د. يوسف رميح</span>
               </span>
             </div>
-<p class="text-gray-300 lang-en">
-  Cardiologist & Interventional Cardiology Specialist.<br>
-  Fellow of the Egyptian Board of Cardiology.<br>
-  Expert in Cardiac Electrophysiology and Arrhythmias at the National Heart Institute.<br>
-  Member of the Egyptian and European Societies of Cardiology.<br>
-  Specialist in Diagnostic & Therapeutic Cardiac Catheterization at Al-Haram Specialized Hospital.<br>
-  Expert in Cardiac Echocardiography and member of the Egyptian Society of Echocardiography.
-</p>
+            <p class="text-gray-300 lang-en">
+              Cardiologist & Interventional Cardiology Specialist.<br>
+              Fellow of the Egyptian Board of Cardiology.<br>
+              Expert in Cardiac Electrophysiology and Arrhythmias at the National Heart Institute.<br>
+              Member of the Egyptian and European Societies of Cardiology.<br>
+              Specialist in Diagnostic & Therapeutic Cardiac Catheterization at Al-Haram Specialized Hospital.<br>
+              Expert in Cardiac Echocardiography and member of the Egyptian Society of Echocardiography.
+            </p>
 
-<p class="text-gray-300 lang-ar hidden-lang">
-  أخصائي أمراض القلب والقسطرة.<br>
-  حاصل على الزمالة المصرية لأمراض القلب والأوعية الدموية.<br>
-  عضو الجمعية المصرية والأوروبية لأمراض القلب والأوعية الدموية.
-  أخصائي القسطرة التشخيصية والدوائية بمستشفى الهرم التخصصي.
-  أخصائي الموجات الصوتية (الإيكو) على القلب وعضو الجمعية المصرية لأشعة الإيكو.
-</p>
+            <p class="text-gray-300 lang-ar hidden-lang">
+              أخصائي أمراض القلب والقسطرة.<br>
+              حاصل على الزمالة المصرية لأمراض القلب والأوعية الدموية.<br>
+              عضو الجمعية المصرية والأوروبية لأمراض القلب والأوعية الدموية.
+              أخصائي القسطرة التشخيصية والدوائية بمستشفى الهرم التخصصي.
+              أخصائي الموجات الصوتية (الإيكو) على القلب وعضو الجمعية المصرية لأشعة الإيكو.
+            </p>
 
           </div>
           <div>
@@ -1578,13 +1587,33 @@
                   >نبذة</a
                 >
               </li>
+                  <li>
+                  <a
+                  href="#experience"
+                  class="nav-link text-theme-secondary hover:text-blue-600 transition-colors"
+                >
+                  <span class="lang-en">Experience</span>
+                  <span class="lang-ar hidden-lang">الخبرات</span>
+                </a>
+              </li>
               <li>
                 <a
-                  href="#services"
-                  class="text-gray-300 hover:text-white transition-colors lang-en"
-                  >Services</a
+                href="#clinic"
+                class="nav-link text-theme-secondary hover:text-blue-600 transition-colors"
                 >
-              </li>
+                <span class="lang-en">Clinic</span>
+                <span class="lang-ar hidden-lang">العيادة</span>
+              </a>
+              
+            </li>
+            <li>
+              <a
+                href="#services"
+                class="text-gray-300 hover:text-white transition-colors lang-en"
+                >Services</a
+              >
+            </li>
+
               <li>
                 <a
                   href="#services"
@@ -1592,20 +1621,24 @@
                   >الخدمات</a
                 >
               </li>
-              <li>
+                    <li>
                 <a
-                  href="#contact"
-                  class="text-gray-300 hover:text-white transition-colors lang-en"
-                  >Contact</a
+                  href="#patients"
+                  class="nav-link text-theme-secondary hover:text-blue-600 transition-colors"
                 >
-              </li>
-              <li>
-                <a
-                  href="#contact"
-                  class="text-gray-300 hover:text-white transition-colors lang-ar hidden-lang"
-                  >اتصل بنا</a
-                >
-              </li>
+                  <span class="lang-en">Testimonials</span>
+                  <span class="lang-ar hidden-lang">آراء المرضى</span>
+                </a>
+                  </li>
+                    <li>
+                    <a
+                      href="#gallery"
+                      class="nav-link text-theme-secondary hover:text-blue-600 transition-colors"
+                    >
+                      <span class="lang-en">Highlights</span>
+                      <span class="lang-ar hidden-lang">لقطات مميزة</span>
+                    </a>
+                  </li>
             </ul>
           </div>
           <div>
@@ -1615,14 +1648,16 @@
             </h3>
             <div class="space-y-2">
               <p class="text-gray-300">01092225732</p>
-              <p class="text-gray-300">info@dryoussef.com</p>
-              <p class="text-gray-300 lang-en">123 Medical Center, Cairo</p>
-              <p class="text-gray-300 lang-ar hidden-lang">
-                القاهرة - جسر السويس - شارع العشرين - <br> أمام عصارة مكة
-              </p>
-            </div>
-                            <div class="flex space-x-4 mt-6 ">
-                <a
+              <p class="text-gray-300">Tabeebyousef20@gmail.com</p>
+                <p class="text-gray-300 lang-en">
+                  Cairo - Gesr El Suez - Al Eshreen Street - <br> In front of Mecca Juice
+                </p>
+                <p class="text-gray-300 lang-ar hidden-lang">
+                  القاهرة - جسر السويس - شارع العشرين - <br> أمام عصارة مكة
+                </p>
+                </div>
+                <div class="flex space-x-4 mt-6 ">
+                  <a
                   href="https://www.facebook.com/share/16fpL15cXz/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -1631,9 +1666,9 @@
                   <i class="fab fa-facebook-f"></i>
                 </a>
                 <a
-                  href="https://wa.me/201092225732"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="https://wa.me/201092225732?text=مرحبًا%20أود%20حجز%20موعد%20مع%20الدكتور"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   class="text-white text-lg hover:text-green-500 transition-colors"
                 >
                   <i class="fab fa-whatsapp"></i>

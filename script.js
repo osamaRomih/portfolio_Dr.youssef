@@ -18,7 +18,7 @@ const defaultConfig = {
 };
 
 // Language and theme management
-let currentLang = "en";
+let currentLang = "ar";
 let isDark = localStorage.getItem("theme") === "dark" || false;
 
 // Initialize
@@ -252,28 +252,67 @@ function initializeNavigation() {
   });
 }
 
+// Theme toggle functionality
 function initializeTheme() {
-  const themeToggle = document.getElementById("themeToggle");
+  const themeToggleInput = document.querySelector(
+    ".switch input[type='checkbox']"
+  );
 
-  // Apply saved theme on load
-  if (isDark) {
-    document.documentElement.classList.add("dark");
-  } else {
-    document.documentElement.classList.remove("dark");
-  }
+  const savedTheme = localStorage.getItem("theme");
+  isDark = savedTheme === "dark";
+
+  // ضبط حالة الـ checkbox
+  if (themeToggleInput) themeToggleInput.checked = isDark;
+
+  // تطبيق الثيم
+  applyTheme();
   updateThemeIcons();
 
-  themeToggle.addEventListener("click", () => {
-    isDark = !isDark;
-    if (isDark) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-    localStorage.setItem("theme", isDark ? "dark" : "light");
-    updateThemeIcons();
-  });
+  // عند تغيير الزر
+  if (themeToggleInput) {
+    themeToggleInput.addEventListener("change", () => {
+      isDark = themeToggleInput.checked;
+      localStorage.setItem("theme", isDark ? "dark" : "light");
+      applyTheme();
+      updateThemeIcons();
+    });
+  }
 }
+
+function applyTheme() {
+  const root = document.documentElement;
+  const sunMoonContainer = document.querySelector(".sun-moon");
+
+  if (isDark) {
+    root.classList.add("dark");
+
+    // ألوان داكنة
+    root.style.setProperty("--bg-color", "#1f2937");
+    root.style.setProperty("--surface-color", "#374151");
+    root.style.setProperty("--text-color", "#f8fafc");
+
+    // تحريك الشمس والقمر
+    if (sunMoonContainer) {
+      sunMoonContainer.classList.add("dark-mode");
+      sunMoonContainer.classList.remove("light-mode");
+    }
+  } else {
+    root.classList.remove("dark");
+
+    // ألوان فاتحة من defaultConfig
+    root.style.setProperty("--bg-color", defaultConfig.background_color);
+    root.style.setProperty("--surface-color", defaultConfig.surface_color);
+    root.style.setProperty("--text-color", defaultConfig.text_color);
+
+    if (sunMoonContainer) {
+      sunMoonContainer.classList.add("light-mode");
+      sunMoonContainer.classList.remove("dark-mode");
+    }
+  }
+}
+
+// استدعاء التهيئة بعد تحميل DOM
+document.addEventListener("DOMContentLoaded", initializeTheme);
 
 function updateThemeIcons() {
   const moonIcon = document.querySelector(".theme-icon-moon");
@@ -409,7 +448,7 @@ function updateLanguage() {
 }
 
 function initializeForm() {
-  const form = document.querySelector("form");
+  const form = document.querySelector("#appointmentForm");
   form.addEventListener("submit", function (e) {
     e.preventDefault();
     const formData = new FormData(form);
@@ -417,39 +456,39 @@ function initializeForm() {
 
     const fullName = `${data.firstName || "-"} ${data.lastName || "-"}`;
 
-    // 👇 هنا نضيف سكربت واتساب
-    const phoneNumber = "+201000204565"; // ضع رقمك هنا بدون مسافات
-    const message = `مرحبًا دكتور! 
-الاسم: ${fullName}
-البريد الإلكتروني: ${data.email || "-"}
-الهاتف: ${data.phone || "-"}
-الرسالة: ${data.message || "-"}
+    // رقم الواتساب الخاص بالدكتور
+    const phoneNumber = "+201000204565";
+
+    // رسالة الواتساب
+    const message = `مرحبًا دكتور، أريد حجز موعد.
+الاسم الأول: ${data.firstName || "-"}
+اسم العائلة: ${data.lastName || "-"}
+العمر: ${data.age || "-"}
+النوع: ${data.gender || "-"}
+الشكوى: ${data.complaint || "-"}
 `;
 
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
       message
     )}`;
-
-    // فتح واتساب في نافذة جديدة
     window.open(whatsappUrl, "_blank");
 
-    // تحديث حالة الزرار
+    // تحديث حالة الزر
     const button = form.querySelector('button[type="submit"]');
     const originalText = button.innerHTML;
-
     button.innerHTML = currentLang === "ar" ? "جاري الإرسال..." : "Sending...";
     button.disabled = true;
 
     setTimeout(() => {
       button.innerHTML = currentLang === "ar" ? "تم الإرسال!" : "Message Sent!";
-      button.classList.remove("bg-blue-600", "hover:bg-blue-700");
+      button.classList.remove("bg-blue-600");
       button.classList.add("bg-green-600");
 
       setTimeout(() => {
         button.innerHTML = originalText;
         button.disabled = false;
         button.classList.remove("bg-green-600");
-        button.classList.add("bg-blue-600", "hover:bg-blue-700");
+        button.classList.add("bg-blue-600");
         form.reset();
       }, 2000);
     }, 1000);
