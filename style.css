@@ -884,7 +884,7 @@ footer a:hover {
     margin: 0 !important;
   }
   .name {
-    font-size: 12px !important;
+    font-size: 20px !important;
   }
 }
 
@@ -1162,4 +1162,13 @@ footer a:hover {
   100% {
     transform: scale(1);
   }
+}
+html:not(.dark) #gallery h2,
+html:not(.dark) #gallery p {
+  color: #ffffff !important;
+}
+
+html:not(.dark) #gallery h2,
+html:not(.dark) #gallery p {
+  color: #111827 !important;
 }
